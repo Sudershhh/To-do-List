@@ -1,0 +1,222 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+body{
+    background-color: rgb(231, 240, 240);
+}
+
+header{
+    width: 100%;
+    height: 4rem;
+    background-color: rosybrown;
+}
+nav
+{
+    width: 100%;
+    padding: 1rem;
+    height:100%;
+    text-align: center;
+}
+
+main
+{
+    width: 100%;
+    height: 100%;
+    display: block;
+}
+
+.todo
+{
+    width: 75%;
+    height: 8rem;
+    margin: 5rem auto;
+   
+    background-color: white;
+    border-radius: 20px;
+    justify-content: space-around;
+    align-items: center;
+    display: flex;
+}
+
+label{
+    font-size: 1.2rem;
+    font-weight: bolder;
+}
+.todo-input
+{
+    width: 60%;
+    height: 3rem;
+    border-radius: 10px;
+    padding: 20px;
+    outline: none;
+    font-size: 1rem;
+    background-color: #7944a5;
+    border: none;
+    color:white;
+}
+.todo-input::placeholder
+{
+    color: white;
+}
+
+.create
+{
+    cursor: pointer;
+    height: 3rem;
+    width: 100px;
+    border-radius: 10px;
+    border: none;
+    outline: none;
+    font-size: 1rem;
+    font-weight: bolder;
+    color:rgb(255, 255, 255);
+    background-color: lightseagreen;
+}
+
+.priority
+{
+    width: 10rem;
+    height: 3rem;
+    padding: 10px;
+    font-size: 1rem;
+    border: none;
+    outline: none;
+    font-weight: bolder;
+    background-color: rgb(172, 183, 185);
+}
+
+option:first-child
+{
+    background-color: orangered;
+}
+option:nth-child(2)
+{
+    background-color: rgb(224, 131, 55);
+}
+option:nth-child(3)
+{
+    background-color: rgb(243, 227, 8);
+}
+
+.todos>h2
+{
+    text-align: center;
+}
+
+.todo-list
+{
+    width: 100%;
+    height: 100%;
+    margin: 3rem auto;
+    
+    display: flex;
+    flex-direction: column;
+}
+
+.todo-content
+{
+    width: 100%;
+    border-radius: 20px;
+    height: 4rem;
+    padding: 20px;
+    display: flex;
+    margin-bottom: 1.2rem;
+    background-color: white;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.todos
+{
+   
+    width: 50%;
+    margin: 0 auto;
+    padding: 2rem;
+    border-radius: 20px;
+}
+
+
+.one
+{
+    background-color:rgb(243, 227, 8) ;
+}
+
+.two
+{
+    background-color: rgb(224, 131, 55);
+}
+
+.three
+{
+background-color: orangered;
+}
+
+.delete
+{
+    cursor: pointer;
+    width: 5rem;
+    height: 2rem;
+    border-radius: 5px;
+    border: none;
+    outline: none;
+    font: 1.2rem bolder;
+}
+
+@media (max-width : 1140px) and (min-width: 650px)
+{
+    .todo
+    {
+        flex-direction: column;
+        height: 100%;
+    }
+    .todo-input
+    {
+        margin:2rem 0 ;
+    }
+    label,.priority,.create
+    {
+        margin-bottom: 1rem;
+    }
+    .todos{
+        width: 75%;
+    }
+
+}
+
+@media (max-width : 649px) and (min-width:280px)
+{
+    .todo
+    {
+        flex-direction: column;
+        height: 100%;
+    }
+    .todo-input
+    {
+        width: 85%;
+        margin:2rem 0 ;
+    }
+    label,.priority,.create
+    {
+        margin-bottom: 1rem;
+    }
+    .todos{
+        background-color: white;
+        width: 85%;
+    }
+    .todo-content
+    {
+        flex-direction: column;
+        height:100%;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .todo-content > h2
+    {
+        margin-bottom: 0.5rem;
+    }
+
+}
